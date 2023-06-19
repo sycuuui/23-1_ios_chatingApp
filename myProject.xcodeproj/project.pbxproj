@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A8E5CDC1590701545BFCC8C /* Pods_myProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A031941F9EAA9477EBA3F214 /* Pods_myProjectTests.framework */; };
 		3362ADF876DDF560DE3B6C5B /* Pods_myProject_myProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6E3431EABAC63FF12805EA /* Pods_myProject_myProjectUITests.framework */; };
+		786911B52A4091FE00C4F58B /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */; };
 		78C815842A3AED16001AF97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815832A3AED16001AF97E /* AppDelegate.swift */; };
 		78C815862A3AED16001AF97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815852A3AED16001AF97E /* SceneDelegate.swift */; };
 		78C815882A3AED16001AF97E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815872A3AED16001AF97E /* ViewController.swift */; };
@@ -18,9 +19,10 @@
 		78C8159B2A3AED17001AF97E /* myProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8159A2A3AED17001AF97E /* myProjectTests.swift */; };
 		78C815A52A3AED17001AF97E /* myProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815A42A3AED17001AF97E /* myProjectUITests.swift */; };
 		78C815A72A3AED17001AF97E /* myProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815A62A3AED17001AF97E /* myProjectUITestsLaunchTests.swift */; };
-		78C815B42A3AF02A001AF97E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78C815B32A3AF02A001AF97E /* GoogleService-Info.plist */; };
 		78C815B62A3AF90B001AF97E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815B52A3AF90B001AF97E /* SignUpViewController.swift */; };
 		78C815B82A3B3378001AF97E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815B72A3B3378001AF97E /* ChatViewController.swift */; };
+		78C815BB2A3B3666001AF97E /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78C815BA2A3B3666001AF97E /* MessageKit */; };
+		78C815BF2A403DCC001AF97E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78C815BE2A403DCC001AF97E /* GoogleService-Info.plist */; };
 		E5D0D35AD26D31AC74E957BD /* Pods_myProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD21E2EF4B0E340CBB483D8 /* Pods_myProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,7 @@
 		0A6E3431EABAC63FF12805EA /* Pods_myProject_myProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myProject_myProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3EF891341D84355EE9E6CB /* Pods-myProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProjectTests.release.xcconfig"; path = "Target Support Files/Pods-myProjectTests/Pods-myProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		76C1F0A4860FCE1C40CA4293 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
+		786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		78C815802A3AED16001AF97E /* myProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C815832A3AED16001AF97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C815852A3AED16001AF97E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +61,9 @@
 		78C815A02A3AED17001AF97E /* myProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C815A42A3AED17001AF97E /* myProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProjectUITests.swift; sourceTree = "<group>"; };
 		78C815A62A3AED17001AF97E /* myProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		78C815B32A3AF02A001AF97E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78C815B52A3AF90B001AF97E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		78C815B72A3B3378001AF97E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		78C815BE2A403DCC001AF97E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CD21E2EF4B0E340CBB483D8 /* Pods_myProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B65CA3F66D6B339C4D932 /* Pods-myProject-myProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject-myProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-myProject-myProjectUITests/Pods-myProject-myProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		97F9B7710EECA3C566DE7368 /* Pods-myProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-myProjectTests/Pods-myProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5D0D35AD26D31AC74E957BD /* Pods_myProject.framework in Frameworks */,
+				78C815BB2A3B3666001AF97E /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,16 +126,17 @@
 		78C815822A3AED16001AF97E /* myProject */ = {
 			isa = PBXGroup;
 			children = (
-				78C815B32A3AF02A001AF97E /* GoogleService-Info.plist */,
 				78C815832A3AED16001AF97E /* AppDelegate.swift */,
 				78C815852A3AED16001AF97E /* SceneDelegate.swift */,
 				78C815872A3AED16001AF97E /* ViewController.swift */,
+				786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */,
 				78C815B52A3AF90B001AF97E /* SignUpViewController.swift */,
 				78C815892A3AED16001AF97E /* Main.storyboard */,
 				78C815B72A3B3378001AF97E /* ChatViewController.swift */,
 				78C8158C2A3AED17001AF97E /* Assets.xcassets */,
 				78C8158E2A3AED17001AF97E /* LaunchScreen.storyboard */,
 				78C815912A3AED17001AF97E /* Info.plist */,
+				78C815BE2A403DCC001AF97E /* GoogleService-Info.plist */,
 			);
 			path = myProject;
 			sourceTree = "<group>";
@@ -194,6 +199,9 @@
 			dependencies = (
 			);
 			name = myProject;
+			packageProductDependencies = (
+				78C815BA2A3B3666001AF97E /* MessageKit */,
+			);
 			productName = myProject;
 			productReference = 78C815802A3AED16001AF97E /* myProject.app */;
 			productType = "com.apple.product-type.application";
@@ -269,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 78C815772A3AED16001AF97E;
+			packageReferences = (
+				78C815B92A3B3666001AF97E /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
 			productRefGroup = 78C815812A3AED16001AF97E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C815902A3AED17001AF97E /* LaunchScreen.storyboard in Resources */,
-				78C815B42A3AF02A001AF97E /* GoogleService-Info.plist in Resources */,
+				78C815BF2A403DCC001AF97E /* GoogleService-Info.plist in Resources */,
 				78C8158D2A3AED17001AF97E /* Assets.xcassets in Resources */,
 				78C8158B2A3AED16001AF97E /* Main.storyboard in Resources */,
 			);
@@ -421,6 +432,7 @@
 				78C815B62A3AF90B001AF97E /* SignUpViewController.swift in Sources */,
 				78C815B82A3B3378001AF97E /* ChatViewController.swift in Sources */,
 				78C815862A3AED16001AF97E /* SceneDelegate.swift in Sources */,
+				786911B52A4091FE00C4F58B /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +774,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78C815B92A3B3666001AF97E /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78C815BA2A3B3666001AF97E /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C815B92A3B3666001AF97E /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78C815782A3AED16001AF97E /* Project object */;
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import Toast_Swift
 
 class SginUpViewController: UIViewController {
     let db = Firestore.firestore()
@@ -16,23 +17,34 @@ class SginUpViewController: UIViewController {
         //버튼 누르면 Main으로 이동
         // Do any additional setup after loading the view.
     }
-      
+    
     @IBOutlet weak var signupTextField: UITextField!
     @IBOutlet weak var PWsignupTextField: UITextField!
     
     @IBAction func signupBtnToBack(_ sender: UIButton) {
-        db.collection("userInfo").document("userInfo").setData(["id" :signupTextField.text!,"pw":PWsignupTextField.text! ])
+        guard let id = signupTextField.text, let pw = PWsignupTextField.text else {
+            // ID 또는 PW 필드가 비어있는 경우
+            return
+        }
+        
+        let docRef = db.collection("userInfo").document(id)
+        
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                self.view.makeToast("id 중복, 회원가입 실패",duration: 1.0, position: .bottom, title: "sign up message")
+            } else {
+                docRef.setData([
+                    "id": id,
+                    "pw": pw
+                ]) { error in
+                    if let error = error {
+                        print("Error creating user: \(error)")
+                        self.view.makeToast("회원가입 실패",duration: 1.0, position: .bottom, title: "sign up message")
+                    } else {
+                        self.view.makeToast("회원가입 성공",duration: 1.0, position: .bottom, title: "sign up message")
+                    }
+                }
+            }
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
