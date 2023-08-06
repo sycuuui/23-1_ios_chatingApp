@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A8E5CDC1590701545BFCC8C /* Pods_myProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A031941F9EAA9477EBA3F214 /* Pods_myProjectTests.framework */; };
 		3362ADF876DDF560DE3B6C5B /* Pods_myProject_myProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6E3431EABAC63FF12805EA /* Pods_myProject_myProjectUITests.framework */; };
+		78311C6D2A7FF0AB000A4C58 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78311C6C2A7FF0AB000A4C58 /* Message.swift */; };
+		78311C6F2A7FF0BE000A4C58 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78311C6E2A7FF0BE000A4C58 /* Sender.swift */; };
 		786911B52A4091FE00C4F58B /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */; };
 		78C815842A3AED16001AF97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815832A3AED16001AF97E /* AppDelegate.swift */; };
 		78C815862A3AED16001AF97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C815852A3AED16001AF97E /* SceneDelegate.swift */; };
@@ -47,6 +49,8 @@
 		0A6E3431EABAC63FF12805EA /* Pods_myProject_myProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myProject_myProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3EF891341D84355EE9E6CB /* Pods-myProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProjectTests.release.xcconfig"; path = "Target Support Files/Pods-myProjectTests/Pods-myProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		76C1F0A4860FCE1C40CA4293 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
+		78311C6C2A7FF0AB000A4C58 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "../../../3-1/ios/myProject 2/myProject/Message.swift"; sourceTree = "<group>"; };
+		78311C6E2A7FF0BE000A4C58 /* Sender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sender.swift; path = "../../../3-1/ios/myProject 2/myProject/Sender.swift"; sourceTree = "<group>"; };
 		786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		78C815802A3AED16001AF97E /* myProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C815832A3AED16001AF97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 				786911B42A4091FE00C4F58B /* ChatRoomViewController.swift */,
 				78C815B52A3AF90B001AF97E /* SignUpViewController.swift */,
 				78C815892A3AED16001AF97E /* Main.storyboard */,
+				78311C6C2A7FF0AB000A4C58 /* Message.swift */,
 				78C815B72A3B3378001AF97E /* ChatViewController.swift */,
+				78311C6E2A7FF0BE000A4C58 /* Sender.swift */,
 				78C8158C2A3AED17001AF97E /* Assets.xcassets */,
 				78C8158E2A3AED17001AF97E /* LaunchScreen.storyboard */,
 				78C815912A3AED17001AF97E /* Info.plist */,
@@ -427,12 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78311C6F2A7FF0BE000A4C58 /* Sender.swift in Sources */,
 				78C815882A3AED16001AF97E /* ViewController.swift in Sources */,
 				78C815842A3AED16001AF97E /* AppDelegate.swift in Sources */,
 				78C815B62A3AF90B001AF97E /* SignUpViewController.swift in Sources */,
 				78C815B82A3B3378001AF97E /* ChatViewController.swift in Sources */,
 				78C815862A3AED16001AF97E /* SceneDelegate.swift in Sources */,
 				786911B52A4091FE00C4F58B /* ChatRoomViewController.swift in Sources */,
+				78311C6D2A7FF0AB000A4C58 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
